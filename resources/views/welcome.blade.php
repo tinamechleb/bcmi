@@ -157,7 +157,7 @@ Start About Section
 @if(app('request')->input('page')==2)
 
 
-<section class="service-2 section" style="background-color: rgb(70,70,70);">
+<section class="service-2 section" style="background-color: rgb(70,70,70);overflow-x:hidden;position:relative;">
 		<div class="container">
 			<div class="row">
 
@@ -234,7 +234,7 @@ Start About Section
 @else
 
 
-<section class="service-2 section" style="background-color: rgb(70,70,70);">
+<section class="service-2 section" style="background-color: rgb(70,70,70);overflow-x:hidden;position:relative;">
 		<div class="container">
 			<div class="row">
 
