@@ -16,7 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/chemicals', function () {
+    return view('chemicals');
+});
+Route::get('/chemicals/resin', function () {
+    return view('resin');
+});
+Route::get('/chemicals/pigment', function () {
+    return view('pigment');
+});
+Route::get('/chemicals/granite', function () {
+    return view('granite');
+});
 
 /*
 |--------------------------------------------------------------------------
