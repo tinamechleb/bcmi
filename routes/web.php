@@ -34,6 +34,9 @@ Route::get('/electrical-services', function () {
 Route::get('/customer-service', function () {
     return view('customer');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
 /*
 |--------------------------------------------------------------------------
 | CMS GET routes for non signed in admins

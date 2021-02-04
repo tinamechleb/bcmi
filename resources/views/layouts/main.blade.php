@@ -106,8 +106,8 @@ Fixed Navigation
 						<li class="nav-item {{request()->is('customer-service') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/customer-service')}}">خدمة العملاء</a>
 						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#">اتصل بنا</a>
+						<li class="nav-item {{request()->is('contact') ? 'active' : ''}}">
+							<a class="nav-link" href="{{URL::to('/contact')}}">اتصل بنا</a>
 						</li>
 					</ul>
 				</div>
