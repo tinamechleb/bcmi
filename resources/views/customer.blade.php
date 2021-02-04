@@ -4,6 +4,14 @@
 @endsection
 
 @section('page')
+
+<div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);">
+    <div style="background:rgb(197,197,197);height:80px;width:2px;" class="my-1"></div>
+    <i class="fa fa-instagram my-1"></i>
+    <i class="fa fa-youtube-play my-1"></i>
+    <i class="fa fa-facebook my-1"></i>
+    <i class="fa fa-twitter my-1"></i>
+</div>
 <section class="service-2 section pb-0" style="overflow-x:hidden;position:relative;margin-top: 140px;">
 		<div class="container">
 			<div class="row">
