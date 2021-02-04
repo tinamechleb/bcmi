@@ -43,7 +43,7 @@
                         كرتون أو كيس محكم الإغلاق بوزن ٢٥ كغ
                         </p>
                     </div>
-                    <img src="{{asset('images/granite-img.png')}}" />
+                    <img src="{{asset('images/granite-img.png')}}" class="w-100" />
 				</div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->
