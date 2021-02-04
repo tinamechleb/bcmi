@@ -84,7 +84,7 @@ Fixed Navigation
 
 				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="navbar-nav ml-auto text-center">
-						<li class="nav-item dropdown active">
+						<li class="nav-item dropdown {{request()->is('/') ? 'active' : ''}}">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								عن الشركة
@@ -97,7 +97,7 @@ Fixed Navigation
 						<li class="nav-item ">
 							<a class="nav-link" href="#">الأسطح الصلبة</a>
 						</li>
-						<li class="nav-item ">
+						<li class="nav-item {{request()->is('chemicals*') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/chemicals')}}">المواد الكيمائية</a>
 						</li>
 						<li class="nav-item ">
@@ -164,7 +164,7 @@ End Fixed Navigation
 
 		function scrollFunction() {
 			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                if(window.location.pathname=="") {
+                if(window.location.pathname=="/") {
 				    document.getElementById("header").style.background = "rgb(70,70,70)";
                 }
                 else {
