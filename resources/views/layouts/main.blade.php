@@ -164,7 +164,8 @@ End Fixed Navigation
 
 		function scrollFunction() {
 			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                if(window.location.pathname=="/") {
+                alert(window.location.pathname);
+                if(window.location.pathname=="/bcmi/") {
 				    document.getElementById("header").style.background = "rgb(70,70,70)";
                 }
                 else {
