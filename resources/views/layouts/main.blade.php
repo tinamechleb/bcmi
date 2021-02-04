@@ -101,10 +101,10 @@ Fixed Navigation
 							<a class="nav-link" href="{{URL::to('/chemicals')}}">المواد الكيمائية</a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="#">خدمات الكهربائية</a>
+							<a class="nav-link" href="{{URL::to('/electrical-services')}}">خدمات الكهربائية</a>
 						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#">خدمة العملاء</a>
+						<li class="nav-item {{request()->is('customer-service') ? 'active' : ''}}">
+							<a class="nav-link" href="{{URL::to('/customer-service')}}">خدمة العملاء</a>
 						</li>
 						<li class="nav-item ">
 							<a class="nav-link" href="#">اتصل بنا</a>

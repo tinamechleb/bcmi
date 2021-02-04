@@ -28,7 +28,12 @@ Route::get('/chemicals/pigment', function () {
 Route::get('/chemicals/granite', function () {
     return view('granite');
 });
-
+Route::get('/electrical-services', function () {
+    return view('electrical');
+});
+Route::get('/customer-service', function () {
+    return view('customer');
+});
 /*
 |--------------------------------------------------------------------------
 | CMS GET routes for non signed in admins

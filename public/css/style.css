@@ -418,7 +418,7 @@ a:focus, a:hover {
   Navigation
 ==================================================================*/
 .active a {
-  color: #000!important;
+  text-decoration: underline;
 }
 
 .navigation {
