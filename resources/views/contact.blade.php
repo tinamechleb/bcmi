@@ -4,6 +4,11 @@
 @endsection
 
 @section('page')
+<style>
+    .col-4 p:last-child {
+        margin-bottom: 0;
+    }
+</style>
 
 <div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);">
     <div style="background:rgb(197,197,197);height:80px;width:2px;" class="my-1"></div>
@@ -130,6 +135,133 @@
                         <h3 class="text-right mt-4" style="color:rgb(70, 69, 71);">نص الرسالة</h3>
                         <textarea name="message" class="col-12" style="border: 2px solid rgb(191,191,191);height: 155px;"></textarea>
 					</form>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <!-- section title -->
+                    <div class="title text-right mt-4">
+                        <div class="mt-4" style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
+                        <div class="mt-4" style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
+                        <h2 style="color:rgb(144, 144, 144);">فروعنا</h2>
+                    </div>
+                    <!-- /section title -->
+
+					<div class="">
+                        <div class="row">
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">جدة</h3>
+                                <h3 class="text-align-center" style="color:rgb(197,197,197);">المقر الرئيسي</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Tel: +966 12 290 0606</p>
+                                <p>Tel: +966 12 290 0605</p>
+                                <p>Fax: +966 12 288 2920</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">الرياض</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Mob: +966 54 430 6064</p>
+                                <p>Mob: +966 50 949 8430</p>
+                                <p>Fax: +966 11 242 8400</p>
+                                <p>Mob: +966 50 222 0195</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">مكة المكرمة</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Mob: +966 50 462 7863</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">المدينة المنورة</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Tel: +966 14 8406797</p>
+                                <p>Fax: +966 14 8406575</p>
+                                <p>Mob: +966 50 430 5336</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">المنطقة الشرقية</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Mob: +966 54 166 5524</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">تبوك</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Tel: +966 14 423 9619</p>
+                                <p>Mob: +966 556518681</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">القصيم</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Mob: +966 54 201 3999</p>
+                                <p>Mob: +966 56 654 0799</p>
+                                <p>Mob: +966 58 120 3336</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">خميس مشيط</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Mob: +966 55 743 4695</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">دبي، الامارات العربية المتحدة</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);border-bottom: 1px solid rgb(197,197,197);">
+                                <p>Tel: +971 4 25 13621</p>
+                                <p>Fax: +971 56120 0032</p>
+                                <p>P.O.Box: 235218</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-bottom: 1px solid rgb(197,197,197);">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);">
+                                <h3 class="text-align-center">عمان، الاردن</h3>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4" style="border-left: 1px solid rgb(197,197,197);">
+                                <p>785526213 962+</p>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-center flex-direction-column py-4">
+                                <p><a class="underline">الموقع</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->

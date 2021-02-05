@@ -25,6 +25,22 @@ h1, h2, h4, h5, h6 {
   color: #000!important;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.underline {
+  text-decoration: underline!important;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 .no-padding {
   padding: 0 !important;
 }
