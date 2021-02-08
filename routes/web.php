@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/gold-stone', function () {
     return view('goldstone');
 });
+Route::get('/colors', function () {
+    return view('colors');
+});
 Route::get('/chemicals', function () {
     return view('chemicals');
 });
