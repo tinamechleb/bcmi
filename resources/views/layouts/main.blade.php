@@ -85,7 +85,7 @@ Fixed Navigation
 				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="navbar-nav ml-auto text-center">
 						<li class="nav-item dropdown {{request()->is('/') ? 'active' : ''}}">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								عن الشركة
 							</a>
@@ -94,13 +94,22 @@ Fixed Navigation
 								<a class="dropdown-item" href="{{URL::to('/?page=2')}}">أهم الشهادات والاعتمادات</a>
 							</div>
 						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#">الأسطح الصلبة</a>
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								الأسطح الصلبة
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+								<a class="dropdown-item" href="{{URL::to('/gold-stone')}}">جولد ستون® </a>
+								<a class="dropdown-item" href="{{URL::to('/colors')}}">قائمة الألوان</a>
+								<a class="dropdown-item" href="{{URL::to('/sinks')}}">المغاسل</a>
+								<a class="dropdown-item" href="{{URL::to('/gallery')}}">معرض الصور</a>
+							</div>
 						</li>
 						<li class="nav-item {{request()->is('chemicals*') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/chemicals')}}">المواد الكيمائية</a>
 						</li>
-						<li class="nav-item ">
+						<li class="nav-item {{request()->is('electrical-services') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/electrical-services')}}">خدمات الكهربائية</a>
 						</li>
 						<li class="nav-item {{request()->is('customer-service') ? 'active' : ''}}">

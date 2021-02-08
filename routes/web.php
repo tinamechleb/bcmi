@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/gold-stone', function () {
+    return view('goldstone');
+});
 Route::get('/chemicals', function () {
     return view('chemicals');
 });
