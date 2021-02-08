@@ -18,11 +18,20 @@
 					<!-- /section title -->
 				</div>
                 <div class="row mx-0 w-100 justify-content-center">
-					<a href="{{URL::to('colors/classic')}}" class="p-2">
-                        <img src="{{asset('images/classic-colors.png')}}" style="max-width: 100%;"/>
+					<a href="{{URL::to('gallery/kitchens')}}" class="p-2">
+                        <img src="{{asset('images/kitchens.png')}}" style="max-width: 100%;"/>
                     </a>
-					<a href="{{URL::to('colors/modern')}}" class="p-2">
-                        <img src="{{asset('images/modern-colors.png')}}" style="max-width: 100%;"/>
+					<a href="{{URL::to('gallery/sinks')}}" class="p-2">
+                        <img src="{{asset('images/sinks-gallery.png')}}" style="max-width: 100%;"/>
+                    </a>
+					<a href="{{URL::to('gallery/counters')}}" class="p-2">
+                        <img src="{{asset('images/counter.png')}}" style="max-width: 100%;"/>
+                    </a>
+					<a href="{{URL::to('gallery/murals')}}" class="p-2">
+                        <img src="{{asset('images/murals.png')}}" style="max-width: 100%;"/>
+                    </a>
+					<a href="{{URL::to('gallery/factory')}}" class="p-2">
+                        <img src="{{asset('images/factory.png')}}" style="max-width: 100%;"/>
                     </a>
 				</div>
 			</div> <!-- End row -->
