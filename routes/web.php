@@ -31,6 +31,9 @@ Route::get('/colors/modern', function () {
 Route::get('/sinks', function () {
     return view('sinks');
 });
+Route::get('/sinks/measurements', function () {
+    return view('sinkmeasurements');
+});
 Route::get('/gallery', function () {
     return view('gallery');
 });
