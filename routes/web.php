@@ -22,6 +22,12 @@ Route::get('/gold-stone', function () {
 Route::get('/colors', function () {
     return view('colors');
 });
+Route::get('/colors/classic', function () {
+    return view('classiccolors');
+});
+Route::get('/colors/modern', function () {
+    return view('moderncolors');
+});
 Route::get('/sinks', function () {
     return view('sinks');
 });

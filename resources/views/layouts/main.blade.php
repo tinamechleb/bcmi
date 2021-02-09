@@ -44,6 +44,10 @@
 			font-family: "FrutigerBold";
 			src: url({{asset('fonts/FrutigerLTArabic65Bold.ttf')}});
 		}
+		@font-face {
+			font-family: "FrutigerReg";
+			src: url({{asset('fonts/Frutiger.ttf')}});
+		}
 	</style>
 </head>
 
