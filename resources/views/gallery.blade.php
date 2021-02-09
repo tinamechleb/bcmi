@@ -13,7 +13,7 @@
 					<div class="title text-right">
 						<div style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<div style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
-						<h2 style="color:rgb(75, 151, 205);">قائمة الألوان</h2>
+						<h2 style="color:rgb(75, 151, 205);">معرض الصور</h2>
 					</div>
 					<!-- /section title -->
 				</div>
