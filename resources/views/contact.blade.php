@@ -9,10 +9,10 @@
         margin-bottom: 0;
     }
     .send-button {
-        border:2px solid rgb(191,191,191);color: rgb(70, 69, 71);border-radius: 30px;background: transparent;padding: 5px 30px;float:right;margin-top:2rem;transition:0.4s;font-size:17px;
+        border:2px solid #7a7a7a;color: rgb(70, 69, 71);border-radius: 30px;background: transparent;padding: 5px 30px;float:right;margin-top:2rem;transition:0.4s;font-size:17px;
     }
     .send-button:hover {
-        border:2px solid rgb(191,191,191);color: white;border-radius: 30px;background: rgb(191,191,191);
+        border:2px solid #7a7a7a;color: white;border-radius: 30px;background: #7a7a7a;
     }
 
 </style>
