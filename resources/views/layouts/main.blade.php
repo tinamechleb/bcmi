@@ -30,7 +30,7 @@
 	<!-- animation css -->
 	<link rel="stylesheet" href="plugins/animate/animate.css">
 	<!-- Slick Carousel -->
-	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}"/>
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
 	<!-- Font Awesome Icons -->
@@ -147,11 +147,8 @@ End Fixed Navigation
     Essential Scripts
     =====================================-->
 	<!-- Main jQuery -->
-	<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-	<script src="plugins/google-map/gmap.js"></script>
+	<!-- <script src="plugins/google-map/gmap.js"></script> -->
 
 	<!-- Form Validation -->
 	<!-- <script src="plugins/form-validation/jquery.form.js"></script>
@@ -163,13 +160,26 @@ End Fixed Navigation
 	<!-- <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script> -->
 	<!-- lightbox -->
 	<!-- <script src="plugins/lightbox2/dist/js/lightbox.min.js"></script> -->
-	<!-- Owl Carousel -->
-	<!-- <script src="plugins/slick/slick.min.js"></script> -->
 	<!-- filter -->
 	<!-- <script src="plugins/filterizr/jquery.filterizr.min.js"></script> -->
 	<!-- Smooth Scroll js -->
 	<!-- <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script> -->
 
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
+
+	<script>
+		// var $jq = jQuery.noConflict();
+		// $jq(document).ready(function(){
+		// 	$jq('.galleryslider').slick({
+		// 		infinite: true,
+		// 		slidesToShow: 3,
+		// 		slidesToScroll: 1
+		// 	});
+		// });
+	</script>
 	<!-- Custom js -->
 	<script src="{{asset('js/script.js')}}"></script>
 	<script>
@@ -188,6 +198,31 @@ End Fixed Navigation
 				document.getElementById("header").style.background = "transparent";
 				document.getElementById("headerlogo").style.height = "95px";
 			}
+		}
+	</script>
+	<script>
+		for(i=1;i<4;i++) {
+
+			// Get the modal
+			var modal = document.getElementById("myModal"+i);
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg"+i);
+			var modalImg = document.getElementById("img"+i);
+			img.onclick = function(){
+				modal.style.display = "flex";
+				modal.style.zIndex = "1049";
+				modalImg.src = this.src;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementById("close"+i);
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+				modal.style.zIndex = "0";
+			} 
 		}
 	</script>
 

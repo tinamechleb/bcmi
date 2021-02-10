@@ -37,6 +37,21 @@ Route::get('/sinks/measurements', function () {
 Route::get('/gallery', function () {
     return view('gallery');
 });
+Route::get('/gallery/kitchens', function () {
+    return view('gallerykitchens');
+});
+Route::get('/gallery/sinks', function () {
+    return view('gallerysinks');
+});
+Route::get('/gallery/counters', function () {
+    return view('gallerycounters');
+});
+Route::get('/gallery/murals', function () {
+    return view('gallerymurals');
+});
+Route::get('/gallery/factory', function () {
+    return view('galleryfactory');
+});
 Route::get('/chemicals', function () {
     return view('chemicals');
 });

@@ -16,7 +16,7 @@
 						<h2 style="color:rgb(75, 151, 205);">معرض الصور</h2>
 					</div>
 					<!-- /section title -->
-				</div>
+                </div>
                 <div class="row mx-0 w-100 justify-content-center">
 					<a href="{{URL::to('gallery/kitchens')}}" class="p-2">
                         <img src="{{asset('images/kitchens.png')}}" style="max-width: 100%;"/>
