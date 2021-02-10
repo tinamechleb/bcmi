@@ -8,6 +8,13 @@
     .col-4 p:last-child {
         margin-bottom: 0;
     }
+    .send-button {
+        border:2px solid rgb(191,191,191);color: rgb(70, 69, 71);border-radius: 30px;background: transparent;padding: 5px 30px;float:right;margin-top:2rem;transition:0.4s;font-size:17px;
+    }
+    .send-button:hover {
+        border:2px solid rgb(159, 132, 78);color: white;border-radius: 30px;background: rgb(159, 132, 78);
+    }
+
 </style>
 
 <div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);">
@@ -134,6 +141,7 @@
                         <input name="country" type="text" class="col-12" style="border: 2px solid rgb(191,191,191);"/>
                         <h3 class="text-right mt-4" style="color:rgb(70, 69, 71);">نص الرسالة</h3>
                         <textarea name="message" class="col-12" style="border: 2px solid rgb(191,191,191);height: 155px;"></textarea>
+                        <input type="submit" class="send-button" style="" value="إرسال" />
 					</form>
                 </div>
 
