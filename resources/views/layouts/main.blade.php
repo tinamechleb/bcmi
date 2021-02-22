@@ -49,6 +49,7 @@
 			src: url({{asset('fonts/Frutiger.ttf')}});
 		}
 	</style>
+	@yield('styles')
 </head>
 
 <body id="body" style="overflow-x:hidden;">
@@ -202,32 +203,7 @@ End Fixed Navigation
 			}
 		}
 	</script>
-	<script>
-		for(i=1;i<4;i++) {
-
-			// Get the modal
-			var modal = document.getElementById("myModal"+i);
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("myImg"+i);
-			var modalImg = document.getElementById("img"+i);
-			img.onclick = function(){
-				modal.style.display = "flex";
-				modal.style.zIndex = "1049";
-				modalImg.src = this.src;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementById("close"+i);
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-				modal.style.display = "none";
-				modal.style.zIndex = "0";
-			} 
-		}
-	</script>
-
+	
 @yield('scripts')
 
 </body>

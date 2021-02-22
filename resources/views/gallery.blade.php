@@ -13,7 +13,8 @@
 					<div class="title text-right">
 						<div style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<div style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
-						<h2 style="color:rgb(75, 151, 205);">معرض الصور</h2>
+						<h2 style="color:rgb(75, 151, 205);">منتجاتنا</h2>
+                        <h3 class="text-right mt-4" style="color:rgb(70, 69, 71);"><a href="{{URL::to('/sinks')}}" style="color:rgb(70, 69, 71);">الأحواض</a></h3>
 					</div>
 					<!-- /section title -->
                 </div>

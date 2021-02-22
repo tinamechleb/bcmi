@@ -87,30 +87,45 @@
                 </div>
                 
                 <div class="galleryslider row mx-0 w-100 justify-content-center">
+                  @for($j=1;$j<11;$j++)
                     <div>
-                        <img id="myImg1" src="{{asset('images/gallery-01.png')}}" class="m-2" style="width:100%;max-width:300px" />
-                        <div id="myModal1" class="modal">
-                            <span class="close" id="close1">&times;</span>
-                            <img class="modal-content" id="img1" />
+                        <img id="myImg{{$j}}" src="{{asset('images/kitchen-'.$j.'.jpg')}}" class="m-2" style="width:100%;max-width:300px" />
+                        <div id="myModal{{$j}}" class="modal">
+                            <span class="close" id="close{{$j}}">&times;</span>
+                            <img class="modal-content" id="img{{$j}}" />
                         </div>
                     </div>
-                    <div>
-                        <img id="myImg2" src="{{asset('images/gallery-01.png')}}" class="m-2" style="width:100%;max-width:300px" />
-                        <div id="myModal2" class="modal">
-                            <span class="close" id="close2">&times;</span>
-                            <img class="modal-content" id="img2" />
-                        </div>
-                    </div>
-                    <div>
-                        <img id="myImg3" src="{{asset('images/gallery-01.png')}}" class="m-2" style="width:100%;max-width:300px" />
-                        <div id="myModal3" class="modal">
-                            <span class="close" id="close3">&times;</span>
-                            <img class="modal-content" id="img3" />
-                        </div>
-                    </div>
+                    @endfor
                 </div> 
 			</div> <!-- End row -->
 		</div> <!-- End container -->
 		<img style="padding-top:60px;width: 100vw;" src="{{asset('images/blue-footer.png')}}"/>
 	</section> <!-- End section -->
+
+  <script>
+		for(i=1;i<11;i++) {
+
+			// Get the modal
+			var modal = document.getElementById("myModal"+i);
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg"+i);
+			var modalImg = document.getElementById("img"+i);
+			img.onclick = function(){
+				modal.style.display = "flex";
+				modal.style.zIndex = "1049";
+				modalImg.src = this.src;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementById("close"+i);
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+				modal.style.zIndex = "0";
+			} 
+		}
+	</script>
+
 @endsection
