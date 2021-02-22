@@ -1,6 +1,89 @@
 
 @extends('layouts/main')
 @section('page')
+<style>
+	p {
+		font-size: 19px;
+	}
+     /* Style the Image Used to Trigger the Modal */
+#myImgID1, #myImgID2, #myImgID3, #myImgID4, #myImgID5, #myImgID6 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImgID1:hover, #myImgID2:hover, #myImgID3:hover, #myImgID4:hover, #myImgID5:hover, #myImgID6:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption1, #caption2, #caption3, #caption4, #caption5, #caption6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption1, #caption2, #caption3, #caption4, #caption5, #caption6 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+</style>
 	<div class="hero-slider justify-content-center d-flex;">
 		<div class="slider-item th-fullpage hero-area" style="background-image: url({{asset('images/slider-back.png')}});">
 			<div class="container">
@@ -51,20 +134,11 @@ Start About Section
 					<div class="col-12 col-md-6">
 						<h3 class="text-right text-white">منتج جولد ستون® مسجل لدى منظمة
 اسفا العالمية للرخام الصناعي </h3>
-						<p class="text-right text-white">حائز على شهادة الآيزو العالمية للجودة ٩٠٠١:٢٠٠٨ Green بالأضافة إلى شهادة
-							<br />
-							<br />
-							حائز على جائزة القوس الذهبي الأروبي للجودة في ألمانيا
-							<br />
-							<br />
-							حائز على شهادة المنتج الأخضر للفئة العادة والذهبية لعام ٢٠١٨
-							<br />
-							<br />
-							حائز على شهادة تمكين
-							<br />
-							<br />
-							حائز على شهادة التدريب المهني
-						</p>
+						<p class="text-right text-white" onclick="iterFun('1')" id="myImgID1">حائز على شهادة الآيزو العالمية للجودة ٩٠٠١:٢٠٠٨ Green بالأضافة إلى شهادة</p>
+						<p class="text-right text-white" onclick="iterFun('3')" id="myImgID3">حائز على جائزة القوس الذهبي الأروبي للجودة في ألمانيا</p>
+						<p class="text-right text-white" onclick="iterFun('4')" id="myImgID4">حائز على شهادة المنتج الأخضر للفئة العادة والذهبية لعام ٢٠١٨</p>
+						<p class="text-right text-white" onclick="iterFun('5')" id="myImgID5">حائز على شهادة تمكين</p>
+						<p class="text-right text-white" onclick="iterFun('6')" id="myImgID6">حائز على شهادة التدريب المهني</p>
 					</div>
 					<div class="col-12 col-md-6">
 						<h3 class="text-right text-white">حاز منتجنا على اعتمادات عديدة في مشــاريع وزاريـة حكـومية ومشــاريع القطــاع الخاص مثل:</h3>
@@ -104,6 +178,37 @@ Start About Section
 			<h3 class="my-0 text-white">/</h3>
 			<h3 class="my-0 text-white">2</h3>
 			<a><i class="fa fa-long-arrow-right mx-1 text-white"></i></a>
+		</div>
+
+		<div id="modalID1" class="modal">
+			<span class="close" id="closeID1">&times;</span>
+			<img class="modal-content" src="{{asset('images/cert1.png')}}" alt="شهادة الآيزو العالمية للجودة ٩٠٠١:٢٠٠٨ Green" id="imgID1" />
+  			<div id="caption1"></div>
+		</div>
+		<div id="modalID2" class="modal">
+			<span class="close" id="closeID2">&times;</span>
+			<img class="modal-content" src="{{asset('images/isfa.png')}}" alt="شهادة التدريب المهني" id="imgID2" />
+  			<div id="caption2"></div>
+		</div>
+		<div id="modalID3" class="modal">
+			<span class="close" id="closeID3">&times;</span>
+			<img class="modal-content" src="{{asset('images/archofeurope.png')}}" alt="جائزة القوس الذهبي الأروبي للجودة في ألمانيا" id="imgID3" />
+  			<div id="caption3"></div>
+		</div>
+		<div id="modalID4" class="modal">
+			<span class="close" id="closeID4">&times;</span>
+			<img class="modal-content" src="{{asset('images/cert2.png')}}" alt="شهادة المنتج الأخضر للفئة العادة والذهبية لعام ٢٠١٨" id="imgID4" />
+  			<div id="caption4"></div>
+		</div>
+		<div id="modalID5" class="modal">
+			<span class="close" id="closeID5">&times;</span>
+			<img class="modal-content" src="{{asset('images/attestation.png')}}" alt="شهادة تمكين" id="imgID5" />
+  			<div id="caption5"></div>
+		</div>
+		<div id="modalID6" class="modal">
+			<span class="close" id="closeID6">&times;</span>
+			<img class="modal-content" src="{{asset('images/isfa.png')}}" alt="شهادة التدريب المهني" id="imgID6" />
+  			<div id="caption6"></div>
 		</div>
 	</section> <!-- End section -->
 
@@ -150,6 +255,34 @@ Start About Section
 			<a href="{{URL::to('/?page=2')}}"><i class="fa fa-long-arrow-right mx-1 text-white"></i></a>
 		</div>
 	</section> <!-- End section -->
+
 @endif
 
+<script>
+		function iterFun(i){
+
+			// Get the modal
+			var modalID = document.getElementById("modalID"+i);
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var imgID = document.getElementById("myImgID"+i);
+			var modalImgID = document.getElementById("imgID"+i);
+			var captionText = document.getElementById("caption"+i);
+			imgID.onclick = function(){
+				modalID.style.display = "block";
+				modalID.style.zIndex = "1049";
+				modalImgID.src = modalImgID.src;
+				captionText.innerHTML = modalImgID.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var spanID = document.getElementById("closeID"+i);
+
+			// When the user clicks on <span> (x), close the modal
+			spanID.onclick = function() {
+				modalID.style.display = "none";
+				modalID.style.zIndex = "0";
+			} 
+		}
+	</script>
 @endsection

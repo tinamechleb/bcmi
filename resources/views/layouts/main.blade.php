@@ -106,15 +106,17 @@ Fixed Navigation
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 								<a class="dropdown-item" href="{{URL::to('/gold-stone')}}">جولد ستون® </a>
 								<a class="dropdown-item" href="{{URL::to('/colors')}}">قائمة الألوان</a>
-								<a class="dropdown-item" href="{{URL::to('/sinks')}}">المغاسل</a>
-								<a class="dropdown-item" href="{{URL::to('/gallery')}}">معرض الصور</a>
+								<a class="dropdown-item" href="{{URL::to('/gallery')}}">منتجاتنا</a>
+								<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="{{URL::to('/sinks')}}">الأحواض</a>
+								</div> -->
 							</div>
 						</li>
 						<li class="nav-item {{request()->is('chemicals*') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/chemicals')}}">المواد الكيمائية</a>
 						</li>
 						<li class="nav-item {{request()->is('electrical-services') ? 'active' : ''}}">
-							<a class="nav-link" href="{{URL::to('/electrical-services')}}">خدمات الكهربائية</a>
+							<a class="nav-link" href="{{URL::to('/electrical-services')}}">الخدمات الكهربائية</a>
 						</li>
 						<li class="nav-item {{request()->is('customer-service') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/customer-service')}}">خدمة العملاء</a>
@@ -225,6 +227,8 @@ End Fixed Navigation
 			} 
 		}
 	</script>
+
+@yield('scripts')
 
 </body>
 
