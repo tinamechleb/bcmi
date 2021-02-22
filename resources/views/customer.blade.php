@@ -18,11 +18,11 @@
 
 				<div class="col-12">
 					<!-- section title -->
-					<div class="title text-right">
+					<div class="title text-right pb-3">
 						<div style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<div style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<h2 style="color:rgb(144, 144, 144);">خدمة العملاء</h2>
-						<h3 style="color:rgb(144, 144, 144);">الأسئلة المكررة</h3>
+						<h3 style="color:rgb(144, 144, 144);padding-top: 30px;font-size: 1.8rem;">الأسئلة المكررة</h3>
 					</div>
 					<!-- /section title -->
 				</div>

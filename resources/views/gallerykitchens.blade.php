@@ -6,12 +6,12 @@
 @section('page')
 <style>
      /* Style the Image Used to Trigger the Modal */
-#myImg1, #myImg2, #myImg3 {
+.myImg {
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg1:hover, #myImg2:hover, #myImg3:hover {opacity: 0.7;}
+.myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -37,7 +37,7 @@
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content, .caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -89,7 +89,7 @@
                 <div class="galleryslider row mx-0 w-100 justify-content-center">
                   @for($j=1;$j<11;$j++)
                     <div>
-                        <img id="myImg{{$j}}" src="{{asset('images/kitchen-'.$j.'.jpg')}}" class="m-2" style="width:100%;max-width:300px" />
+                        <img id="myImg{{$j}}" src="{{asset('images/kitchen-'.$j.'.jpg')}}" class="m-2 myImg" style="width:100%;max-width:300px" />
                         <div id="myModal{{$j}}" class="modal">
                             <span class="close" id="close{{$j}}">&times;</span>
                             <img class="modal-content" id="img{{$j}}" />
