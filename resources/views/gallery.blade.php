@@ -5,7 +5,7 @@
 
 @section('page')
 <section class="service-2 section pb-0" style="overflow-x:hidden;position:relative;margin-top: 140px;">
-		<div class="container">
+		<div class="container gallery-container">
 			<div class="row">
 
 				<div class="col-12">
@@ -14,24 +14,28 @@
 						<div style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<div style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
 						<h2 style="color:rgb(75, 151, 205);">منتجاتنا</h2>
-                        <h3 class="text-right mt-4" style="color:rgb(70, 69, 71);"><a href="{{URL::to('/sinks')}}" style="color:rgb(70, 69, 71);">الأحواض</a></h3>
 					</div>
 					<!-- /section title -->
                 </div>
                 <div class="row mx-0 w-100 justify-content-center">
-					<a href="{{URL::to('gallery/kitchens')}}" class="p-2">
+					<a href="{{URL::to('/sinks')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px; min-height:calc(267.55px + .75rem + .75rem);">
+                        <img src="{{asset('images/st2-sink.png')}}" class="sinkgalimg" style="max-width: 100%;"/>
+						<div class="m-2 col-12" style="position: absolute; top: 0; left: 0;width: calc(100% - .75rem - .75rem);height: calc(100% - .75rem - .75rem);background: rgba(0,0,0,0.3);"></div>
+						<h2 style="color: #fff;position: absolute;bottom: 14px;right:20px;z-index: 999;font-size: 1.6rem;font-weight: 400;">الأحواض</h2>
+                    </a>
+					<a href="{{URL::to('gallery/kitchens')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px;">
                         <img src="{{asset('images/kitchens.png')}}" style="max-width: 100%;"/>
                     </a>
-					<a href="{{URL::to('gallery/sinks')}}" class="p-2">
+					<a href="{{URL::to('gallery/sinks')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px;">
                         <img src="{{asset('images/sinks-gallery.png')}}" style="max-width: 100%;"/>
                     </a>
-					<a href="{{URL::to('gallery/counters')}}" class="p-2">
+					<a href="{{URL::to('gallery/counters')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px;">
                         <img src="{{asset('images/counter.png')}}" style="max-width: 100%;"/>
                     </a>
-					<a href="{{URL::to('gallery/murals')}}" class="p-2">
+					<a href="{{URL::to('gallery/murals')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px;">
                         <img src="{{asset('images/murals.png')}}" style="max-width: 100%;"/>
                     </a>
-					<a href="{{URL::to('gallery/factory')}}" class="p-2">
+					<a href="{{URL::to('gallery/factory')}}" class="p-2 col-12 col-md-4 col-lg-2" style="max-width: 216px;">
                         <img src="{{asset('images/factory.png')}}" style="max-width: 100%;"/>
                     </a>
 				</div>

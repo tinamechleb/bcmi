@@ -467,7 +467,7 @@ a:focus, a:hover {
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   padding: 20px 15px;
   text-transform: uppercase;
@@ -477,13 +477,17 @@ a:focus, a:hover {
 
 .navigation .navbar-dark .navbar-nav .nav-item .nav-link {
   color: #8d8d8d;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   padding: 20px 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: .2s ease-in-out 0s;
 
+}
+
+.dropdown-menu {
+  font-size: 16px;
 }
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
@@ -581,6 +585,32 @@ a:focus, a:hover {
   .navigation .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+@media (max-width: 1199px) {
+  .gallery-container .col-lg-2{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-container .col-lg-2{
+    flex: 0 0 50%;
+    max-width: 50%;;
+  }
+}
+@media (max-width: 405px) {
+  .gallery-container .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-container .col-lg-2 {
+    min-height: unset!important;
   }
 }
 

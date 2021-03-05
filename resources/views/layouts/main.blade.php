@@ -120,7 +120,7 @@ Fixed Navigation
 							<a class="nav-link" href="{{URL::to('/electrical-services')}}">الخدمات الكهربائية</a>
 						</li>
 						<li class="nav-item {{request()->is('customer-service') ? 'active' : ''}}">
-							<a class="nav-link" href="{{URL::to('/customer-service')}}">خدمة العملاء</a>
+							<a class="nav-link" href="{{URL::to('/customer-service')}}">الأسئلة الشائعة</a>
 						</li>
 						<li class="nav-item {{request()->is('contact') ? 'active' : ''}}">
 							<a class="nav-link" href="{{URL::to('/contact')}}">اتصل بنا</a>

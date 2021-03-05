@@ -2,9 +2,7 @@
 @extends('layouts/main')
 @section('page')
 <style>
-	p {
-		font-size: 19px;
-	}
+	
      /* Style the Image Used to Trigger the Modal */
 #myImgID1, #myImgID2, #myImgID3, #myImgID4, #myImgID5, #myImgID6 {
   cursor: pointer;
@@ -100,12 +98,11 @@
 		</div>
 	</div>
 
-	<div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;">
-		<div style="background:#fff;height:80px;width:2px;" class="my-1"></div>
-		<i class="fa fa-instagram my-1 text-white"></i>
-		<i class="fa fa-youtube-play my-1 text-white"></i>
-		<i class="fa fa-facebook my-1 text-white"></i>
-		<i class="fa fa-twitter my-1 text-white"></i>
+	<div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);z-index: 999999;">
+		<div style="background:rgb(197,197,197);height:80px;width:2px;" class="my-1"></div>
+		<a href="https://www.instagram.com/bcmi_official/" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-instagram my-1"></i></a>
+		<a href="https://www.facebook.com/Albadaha-البداهة-107187900991152/" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-facebook my-1"></i></a>
+		<a href="https://twitter.com/bcmi_official?lang=en" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-twitter my-1"></i></a>
 	</div>
 
 

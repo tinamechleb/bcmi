@@ -17,18 +17,40 @@
 
 </style>
 
-<div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);">
+<div style="display: flex; flex-direction:column;position:fixed;height:100vh;align-items:center;left:30px;top:0;justify-content:center;color:rgb(197,197,197);z-index: 999999;">
     <div style="background:rgb(197,197,197);height:80px;width:2px;" class="my-1"></div>
-    <i class="fa fa-instagram my-1"></i>
-    <i class="fa fa-youtube-play my-1"></i>
-    <i class="fa fa-facebook my-1"></i>
-    <i class="fa fa-twitter my-1"></i>
+    <a href="https://www.instagram.com/bcmi_official/" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-instagram my-1"></i></a>
+    <a href="https://www.facebook.com/Albadaha-البداهة-107187900991152/" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-facebook my-1"></i></a>
+    <a href="https://twitter.com/bcmi_official?lang=en" target="_blank" style="color:rgb(197,197,197);"><i class="fa fa-twitter my-1"></i></a>
 </div>
 <section class="service-2 section pb-0" style="overflow-x:hidden;position:relative;margin-top: 140px;">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-12">
+
+
+            <div class="col-12">
+                    <!-- section title -->
+                    <div class="title text-right">
+                        <div class="mt-4" style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
+                        <div class="mt-4" style="position:absolute;top:29px;left:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
+                        <h2 style="color:rgb(144, 144, 144);">الاستفسارات والشكاوى</h2>
+                        <h3 style="color:rgb(144, 144, 144);">للاستفسارات والشكاوى يسعدنا تواصلكم مع خدمة العملاء:</h3>
+                    </div>
+                    <!-- /section title -->
+                    
+					<div class="col-12 mt-4">
+						<p class="text-right text-black">
+                            البريد الإلكتروني: customer.service@albadaha.com
+                        </p>
+						<p class="text-right text-black">
+                        هاتف :٠٦٠٦ ٢٩٠ ١٢ ٠٠٩٦٦
+                        </p>
+					</div>
+                </div>
+
+
+				<div class="col-12 mt-5">
 					<!-- section title -->
 					<div class="title text-right">
 						<div style="position:absolute;top:29px;right:-500px;width:500px;height:2px;background:#8d8d8d;"></div>
